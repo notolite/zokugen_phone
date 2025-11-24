@@ -14,9 +14,7 @@ javascript:(function(){
   const inptfrm = frames["yui"].document.kov;
   inptfrm.removeAttribute("onSubmit");
   inptfrm.addEventListener("submit", () => {
-    console.log("hantei1");
     if (!inptfrm.ziko[2].checked && !inptfrm.ziko[3].checked) {
-      console.log("hantei");
       if (/[^\x00-\x7F]/.test(inptfrm.rein.value)) {
         inptfrm.ziko[1].checked = true;
       } else {
