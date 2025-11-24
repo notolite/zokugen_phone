@@ -1,4 +1,8 @@
 javascript:(function(){
+  const meta = document.createElement("meta");
+  meta.name = "viewport";
+  meta.content = "width=device-width,initial-scale=1";
+  document.head.appendChild(meta);
   const frmst = document.querySelector("frameset");
   frmst.setAttribute("cols", "*");
   frmst.setAttribute("rows", "300,*");
