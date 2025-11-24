@@ -11,4 +11,5 @@ javascript:(function(){
   for (let i = 0; i < rms.length; i++) {
     brs[rms[i]].remove();
   }
+  document.kov.removeAttribute("onSubmit");
 })();
